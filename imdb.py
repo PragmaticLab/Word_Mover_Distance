@@ -20,7 +20,7 @@ class LabeledLineSentence(object):
                 	self.sentences += [line]
         return self.sentences
 
-length = 75
+length = 2000
 
 # 'data/train-neg.txt':'TRAIN_NEG', 
 sources = {'data/train-pos.txt':'TRAIN_POS'}
@@ -32,7 +32,7 @@ sentences = [line[:length] for line in sentences]
 sample1 = "this show was incredible i ve seen all three and this is the best this movie has suspense a bit of romance stunts that will blow your mind go bobbie great characters and amazing locations where was this filmed will there be more i really liked the story line with her brother looking forward to chameleon and to see how the world is saved yet again"
 sample2 = "this anime was underrated and still is hardly the dorky kids movie as noted i still come back to this years after i first saw it one of the better movies released the animation while not perfect is good camera tricks give it a d feel and the story is still as good today even after i grew up and saw ground breakers like neon genesis evangelion and rahxephon it has nowhere near the depth obviously but try to see it from a lighthearted view it s a story to entertain not to question still one of my favourites i come back too when i feel like a giggle on over more lighthearted animes not to say its a childish movies there are surprisingly sad moments in this and you need a sense of humour to see it all"
 
-target = sample2[:length]
+target = sample1[:length]
 
 
 scores = {}
